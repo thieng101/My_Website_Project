@@ -11,22 +11,28 @@ font-family: Georgia, serif;
 }
 
 .topnav {
-overflow: hidden;
-background-color: white;
+    overflow: hidden;
+    background-color: white;
+
 }
 
 .topnav a {
-float: right;
-color: black;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 17px;
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 5px;
+    /* border: none; */
+    /* Border radius is used to set the circle border? */
 }
 
 .topnav a:hover {
-background-color: black;
-color: white;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px; 
 }
 
 .centered-wrapper {
@@ -75,7 +81,7 @@ color: white;
 
 .home_txt_centered{
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: Playfair Display ;
