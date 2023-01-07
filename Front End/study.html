@@ -8,6 +8,55 @@
     <title>Document</title>
 </head>
 
+<style>
+    div inline_test{
+        display: inline-block;
+        height: 200px;
+        width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 5px;;
+    }
+
+    #box{
+        width: 1000px;
+        height: 1000px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-image: url("flower_picture2.jpg");
+
+        box-shadow: 100px 100px 2px rgb(115, 230, 58);
+    }
+
+    #box2{
+        width: 1000px;
+        height: 1000px;
+        border: 1px dashed blue;
+        border-radius: 5px;
+        padding: 20px;
+        /*
+        margin-top: 100px;
+        margin: auto;
+        */
+
+        margin: 100px auto 50px auto;
+        background-image: linear-gradient(to bottom,white 0%,white 100%), 
+        linear-gradient(to bottom, pink 0%, pink 100%);
+        background-clip: content-box,padding-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #box2 div{
+        /* flex is used to adjust the size of the content*/
+        flex: 0 0 120px;
+    }
+
+
+
+</style>
+
+
 <body>
     <!-- <script 
         src="drat.js">
@@ -73,5 +122,39 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/0wo1POAFOrk" title="YouTube video player" 
     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
     allowfullscreen></iframe>
+    
+    <br>
+    <div class="inline_test">
+        This is a block element
+    </div>
+
+    <div class="inline_test">
+        This is a block element
+    </div>
+
+    <div id="box">
+
+    </div>
+
+
+    <div id="box2">
+        <div>
+        Example of padding
+        </div>
+    </div>
+    
+    <div style=" width: 300px; margin: auto; border: 1px solid red">
+        Tesgint
+    </div>
+
+    <div style="display: inline-block;border:1px solid red ; width: 1000px">
+        Testing using max widthTesting using max widthTesting using max widthTesting using max width
+        Testing using max widthTesting using max widthTesting using max widthTesting using max width
+        Testing using max widthTesting using max widthTesting using max width
+    </div>
+   
+    
+
+
 </body>
 </html>
