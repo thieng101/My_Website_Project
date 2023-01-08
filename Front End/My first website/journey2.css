@@ -1,0 +1,36 @@
+html{
+    height: 100%;
+  }
+  
+body { 
+    margin: 0; 
+    display: grid;
+    height: 100%;
+    grid-template-areas:
+        "header_section ."
+        "Site-content_section sidebar_section "
+        "footer_section .";
+    grid-template-rows: 100px 100% 50px; /* 100px for header, 100% for content section, 50px for footer */
+    grid-template-columns: 95% 5%;
+
+}
+
+.header { 
+    grid-area: header_section;
+    background-color: #FDD; 
+}
+
+.sidebar{
+    grid-area: sidebar_section;
+    background-color: rgb(255, 255, 255);
+}
+
+.Site-content { 
+    grid-area: Site-content_section;
+    background-color: #DFD; 
+}
+
+.footer {
+    grid-area: footer_section;
+    background-color: #049e8c;
+}
