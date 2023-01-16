@@ -91,7 +91,20 @@
         border: 5px solid red;
         min-width: 10px;
     }
+    .backgroundtest{
+        width: 1000px;
+        height: 1000px;
+        background-image: url(IMG/background_pic.jpg);
+        background-position: 0px 0px;
+        background-repeat: repeat-x;
+        animation: example 10s linear infinite alternate;
+        
+    }
 
+    @keyframes example {
+        from {background-position: 0 0;}
+        to {background-position: 100% 0;}
+      }
 
 
 </style>
@@ -210,6 +223,8 @@
         PikaPikaChuChu PikaPikaChuChu PikaPikaChuChu PikaPikaChuChu PikaPikaChuChu PikaPikaChuChu PikaPikaChuChu
         PikaPikaChuChu PikaPikaChuChu PikaPikaChuChu PikaPikaChuChu PikaPikaChuChu PikaPikaChuChu PikaPikaChuChu
     </div>
+
+   
 
 </body>
 </html>

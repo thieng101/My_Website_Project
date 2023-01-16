@@ -87,3 +87,22 @@ font-family: Georgia, serif;
     font-family: Playfair Display ;
     font-size:large;
 }
+
+.animatebackground{
+  width: 200px;
+  height: 200px;
+  background-image: url("IMG/background_pic.jpg");
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  animation: animatedBackground 10s linear infinite alternate;
+}
+
+@keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
+  
