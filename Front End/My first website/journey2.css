@@ -6,31 +6,105 @@ body {
     margin: 0; 
     display: grid;
     height: 100%;
-    grid-template-areas:
+    /* grid-template-areas:
         "header_section ."
         "Site-content_section sidebar_section "
-        "footer_section .";
-    grid-template-rows: 100px 100% 50px; /* 100px for header, 100% for content section, 50px for footer */
-    grid-template-columns: 95% 5%;
+        "footer_section ."; */
+
+    grid-template-areas:
+    "header_section "
+    "Site-content_section "
+    "footer_section ";
+
+    grid-template-rows: 75px 100% 50px; /* 100px for header, 100% for content section, 50px for footer */
+    grid-template-columns: 100%;
+    /* grid-template-columns: 95% 5%; */
 
 }
 
 .header { 
     grid-area: header_section;
-    background-color: #FDD; 
+    background-color: rgba(182, 194, 191, 0.886);
+    position: sticky;
+    border-bottom: 5px solid rgba(182, 194, 191, 0.886);
+    top: 0;
+   
+
 }
 
-.sidebar{
+/* .sidebar{
     grid-area: sidebar_section;
     background-color: rgb(255, 255, 255);
-}
+} */
 
 .Site-content { 
     grid-area: Site-content_section;
-    background-color: #DFD; 
+    background-color: #f0f5f5; 
 }
 
 .footer {
     grid-area: footer_section;
     background-color: #049e8c;
+}
+
+
+ul{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* float: right; */
+    list-style-type: none;
+    /* margin: auto; */
+    /* margin-top: 30px;
+    min-height: 400px;
+    margin-right: 60px; */
+    font-size: 17px;
+}
+
+ul li{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+ul li a{
+    text-decoration: none;
+    /* color: white;
+    padding: 14x 20px;
+    font-size: 23px;
+    margin: 10px;
+    transition: 0.5 ease;
+
+    float: left; */
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 23px;
+    margin: 5px;
+
+}
+
+ul li a:hover{
+    /* background-color: black; */
+    color: white;
+    border: none;
+    border-radius: 20px; 
+}
+
+ul li a:active{
+    background-color: black;
+    color: white;
+}
+
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+    margin-top: 0;
+    margin-left: 30px; 
+}
+
+.body_contnent{
+    display: inline-block;
+    margin-top: auto;
+    margin-left: 100%;
 }
