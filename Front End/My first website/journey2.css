@@ -1,6 +1,11 @@
 html{
     height: 100%;
   }
+
+
+*{
+    box-sizing: border-box;
+}
   
 body { 
     margin: 0; 
@@ -24,9 +29,9 @@ body {
 
 .header { 
     grid-area: header_section;
-    background-color: rgba(182, 194, 191, 0.886);
+    background-color: black;
     position: sticky;
-    border-bottom: 5px solid rgba(182, 194, 191, 0.886);
+    border-bottom: 5px solid black;
     top: 0;
    
 
@@ -37,14 +42,10 @@ body {
     background-color: rgb(255, 255, 255);
 } */
 
-.Site-content { 
-    grid-area: Site-content_section;
-    background-color: #f0f5f5; 
-}
 
 .footer {
     grid-area: footer_section;
-    background-color: #049e8c;
+    background-color: black;
 }
 
 
@@ -63,7 +64,7 @@ ul{
 
 ul li{
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 ul li a{
@@ -75,7 +76,7 @@ ul li a{
     transition: 0.5 ease;
 
     float: left; */
-    color: black;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     font-size: 23px;
@@ -84,8 +85,8 @@ ul li a{
 }
 
 ul li a:hover{
-    /* background-color: black; */
-    color: white;
+    background-color: white;
+    color: black;
     border: none;
     border-radius: 20px; 
 }
@@ -95,6 +96,7 @@ ul li a:active{
     color: white;
 }
 
+
 .logo img{
     float: left;
     width: 150px;
@@ -103,8 +105,31 @@ ul li a:active{
     margin-left: 30px; 
 }
 
-.body_contnent{
-    display: inline-block;
-    margin-top: auto;
-    margin-left: 100%;
+
+.Site-content { 
+    grid-area: Site-content_section;
+    background-color: white; 
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.navigation{
+    flex-basis: 35%;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.navigation img{
+    width: 96%;
+    height: 100%;
+}
+
+.content{
+    flex-basis: 65%;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+
+
+

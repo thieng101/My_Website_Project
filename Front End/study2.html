@@ -6,7 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+
+<style>
+    *{
+        box-sizing: border-box;
+    }
     
+    #container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+   #container div{
+   
+   }
+
+   .navigation{
+    flex-basis: 20%;
+    flex-grow: 0;
+    flex-shrink: 1;
+   }
+
+   .content{
+    flex-basis: 80%;
+    flex-grow: 1;
+    flex-shrink: 0;
+   }
+
+   .header{
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color: white;
+    color: black;
+    border-bottom: 2px solid black;
+    padding: 20px;
+   }
+
+
+
+</style>
+
+<body>
+
+    <div id="container">
+        <div class="header">Header</div>
+        <div class="navigation">Navigation</div>
+
+        <div class="content">
+            <h1>Hello Word</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati doloribus perspiciatis ut officiis incidunt neque maxime, commodi iure similique ullam magni. 
+                Omnis provident maxime quibusdam accusamus! Dolore, deserunt veniam.
+            </p>
+
+            <h2>Hello World Again</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos alias, iusto molestias omnis, quia excepturi corrupti 
+                magni, sint voluptatibus a dicta. Est corrupti iusto temporibus ea dicta tempora obcaecati ipsa?</p>
+
+        </div>
+    </div>
 </body>
 </html>
