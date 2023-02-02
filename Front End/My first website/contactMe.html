@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type= "text/css" href="style.css">
+    <title>hello from amy</title>  
+    <!-- Title is name of the page -->
+    <script src="https://kit.fontawesome.com/1c8222ee2c.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+
+
+    html{
+        height: 100%;
+      }
+    
+    
+    *{
+        box-sizing: border-box;
+    }
+      
+    body { 
+        margin: 0; 
+        display: grid;
+        height: 100%;
+        /* grid-template-areas:
+            "header_section ."
+            "Site-content_section sidebar_section "
+            "footer_section ."; */
+    
+        grid-template-areas:
+        "header_section "
+        "Site-content_section "
+        "footer_section ";
+    
+        grid-template-rows: 75px 100% 50px; /* 100px for header, 100% for content section, 50px for footer */
+        grid-template-columns: 100%;
+        /* grid-template-columns: 95% 5%; */
+    
+    }
+    
+    .header { 
+        grid-area: header_section;
+        background-color: black;
+        /* position: sticky; */
+        border-bottom: 5px solid black;
+        top: 0;
+       
+    
+    }
+    
+    /* .sidebar{
+        grid-area: sidebar_section;
+        background-color: rgb(255, 255, 255);
+    } */
+    
+    
+    .footer {
+        grid-area: footer_section;
+        background-color: black;
+    }
+    
+    
+    .header ul{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        /* float: right; */
+        list-style-type: none;
+        /* margin: auto; */
+        /* margin-top: 30px;
+        min-height: 400px;
+        margin-right: 60px; */
+        font-size: 17px;
+    }
+    
+    .header ul li{
+        display: inline-block;
+        margin-top: 15px;
+    }
+    
+    .header ul li a{
+        text-decoration: none;
+        /* color: white;
+        padding: 14x 20px;
+        font-size: 23px;
+        margin: 10px;
+        transition: 0.5 ease;
+    
+        float: left; */
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 23px;
+        margin: 5px;
+    
+    }
+    
+    .header ul li a:hover{
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 20px; 
+    }
+    
+    .header ul li a:active{
+        background-color: black;
+        color: white;
+    }
+    
+    
+    .logo img{
+        float: left;
+        width: 150px;
+        height: auto;
+        margin-top: 0;
+        margin-left: 30px; 
+    }
+    
+
+
+</style>
+
+    
+<body >
+
+    <div class= "header">
+        <div class="logo">
+            <img src="IMG/amynguyen_logo5.png" alt="logo">
+        </div>
+
+        <ul>
+            <li class="active"><a href="My_Website.html"> <i class="fa fa-fw fa-home"></i> home</a></li>
+            <li> <a href="journey.html" target="_blank"> <i class="fa-solid fa-ship"></i> my journey</a></li>
+            <li><a href="HongNguyenResume.pdf"> <i class="fa-solid fa-diagram-project"></i> my resume</a></li>
+        </ul>
+    </div>
+       
+    <!-- <h1>hong thy nguyen <i class="fa-brands fa-space-awesome"></i> </h1> -->
+
+    <section class="centered-wrapper">
+        <div class="centered-content">
+
+            <h1>hong thy nguyen </h1>
+
+            <div>
+                &nbsp;&nbsp;
+                <p>here is some information about me <i class="fa-brands fa-space-awesome"></i></p>
+                <p><i class="fa-solid fa-envelope"></i>: hongthynguyenn@gmail.com</p>
+                <p><i class="fa-brands fa-linkedin"></i>: <a href="https://www.linkedin.com/in/hong-thy-nguyen/">Linkedin</a></p>
+
+
+                <br>
+                <br>
+                <br>
+
+                <p>here is some facts about me <i class="fa-brands fa-space-awesome"></i></p>
+                
+                <p> preferred name: <i>amy</i></p>
+                <p>age: 21</p>
+                <p>hobbies: drinking coffee <i class="fa-solid fa-mug-hot"></i> and writting code <i class="fa-solid fa-laptop"></i> in the morning</p>
+                
+                <!-- target attribut is to set when clicking in a link, it opened in a new tab -->
+                <p>here is my youtube channel: <a href="https://www.youtube.com/@thieng4023" target="_blank">link</a></p>
+                <p>give a look at all projects that I have done: <a href="journey.html" target="_blank">project found here </a> </p>  
+            </div>
+        </div> 
+    </section>
+</body>
+</html>

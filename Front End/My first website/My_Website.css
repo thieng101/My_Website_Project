@@ -172,6 +172,15 @@ ul li a:active{
     transition: all 0.3s;
 }
 
+#contactbutton{
+    text-decoration: none;
+    color: white;
+}
+
+#contactbutton:hover{
+    background-color:white;
+    color: black;
+}
 
 #journey{
     font-size: x-large;

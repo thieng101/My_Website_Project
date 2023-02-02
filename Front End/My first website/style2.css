@@ -1,0 +1,130 @@
+body{
+    font-family: 'Anton', sans-serif;
+}
+
+div inline_test{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;;
+}
+
+#box{
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-image: url("flower_picture2.jpg");
+
+    box-shadow: 100px 100px 2px rgb(115, 230, 58);
+}
+
+#box2{
+    width: 1000px;
+    height: 1000px;
+    border: 1px dashed blue;
+    border-radius: 5px;
+    padding: 20px;
+    /*
+    margin-top: 100px;
+    margin: auto;
+    */
+
+    margin: 100px auto 50px auto;
+    background-image: linear-gradient(to bottom,white 0%,white 100%), 
+    linear-gradient(to bottom, pink 0%, pink 100%);
+    background-clip: content-box,padding-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#box2 div{
+    /* flex is used to adjust the size of the content*/
+    flex: 0 0 120px;
+}
+
+#box3{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    opacity: 0.5;
+}
+
+.testing_image{
+    display: block;
+    background-image: url("flower_picture.jpg");
+    height: 1000px;
+}
+
+.test_box{
+    margin-top: 10px;
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    border: 5px solid red;
+    box-sizing: border-box;
+    outline: 5px solid black;
+    outline-offset: 10px;
+    color: red;
+    font-size: 40px;
+    text-shadow: 10px 5px 5px black;
+}
+
+.test_box2{
+    margin-top: 20px;
+    display: inline-block;
+    border: 5px solid red;
+    min-width: 10px;
+}
+.backgroundtest{
+    width: 1000px;
+    height: 1000px;
+    background-image: url(IMG/background_pic.jpg);
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: example 10s linear infinite alternate;
+    
+}
+
+/* Animated */
+@keyframes example {
+    from {background-position: 0 0;}
+    to {background-position: 100% 0;}
+  }
+
+.box4{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 50px auto;
+}
+
+.box4::before{
+    content: ' ';
+    display: block;
+    border: 10px solid red;
+}
+
+
+#capitalizeFirstLetter::first-letter{
+    font-size: 50px;
+    float: left;
+}
+
+#capitalizeFirstLetter::first-line{
+    font-weight: bold;
+}
+
+/* Hover a line making it highlighted */
+::selection{
+    background-color: black;
+    color: white;
+}
